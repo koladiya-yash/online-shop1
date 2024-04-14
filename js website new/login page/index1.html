@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form</title>
+  <link rel="icon" href="../main website/images/logo.png">
+  <link rel="stylesheet" href="./style1.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body  data-aos="fade-down-left">
+  <input type="radio" name="optionScreen" id="SignIn" hidden checked>
+  <input type="radio" name="optionScreen" id="SignUp" hidden>
+  
+  <section>
+    <div id="logo">
+      <img src="./logo.png" alt="Spotify-Logo" width="45">
+      <h1 style="margin-left: 10px;">Online Shop</h1>
+    </div>
+  
+    <nav>
+      <label for="SignIn">Sign In</label>
+      <label for="SignUp">Sign Up</label>
+    </nav>
+  
+    <form action="" id="SignInFormData">
+      <input type="text" id="username" placeholder="Username">
+      <input type="password" id="password" placeholder="Password">
+      <span>
+        <input type="checkbox" id="staySingedIn" checked>
+        <label for="staySingedIn">stay Signed In</label>
+      </span>
+      <a href="../main website/index.html"><button type="button" title="Sing In" class="b1">Sing In</button></a>
+  
+      <a id="forgotPassword">Forgot Your Password?</a>
+    </form>
+  
+    <form action="" id="SignUpFormData">
+      <input type="text" id="name" placeholder="Name Complete">
+      <input type="email" id=email placeholder="E-mail">
+      <input type="password" id="password" placeholder="New Password">
+      <span>
+        <input type="checkbox" id="staySingedUp" checked>
+        <label for="staySingedUp">stay Signed In</label>
+      </span>
+      <a href="../main website/index.html"><button type="button" title="Sing Up" class="b1">Sing Up</button></a>
+    </form>
+  
+  </section>
+</body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+  AOS.init();
+</script>
+</html>

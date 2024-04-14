@@ -1,0 +1,21 @@
+.product-box{
+    height: 500px;
+    width: 420px;
+    background-color: aliceblue;
+    position: relative;
+    top: 60px;
+    left: 30%;
+}
+
+.product-box img{
+    width: 350px;
+    margin-left: 30px;
+    filter: drop-shadow(5px 5px 5px #222);
+}
+
+a img{
+    width: 25px;
+    display: block;
+    margin-left: 1300px;
+    margin-top: -480px;
+}
