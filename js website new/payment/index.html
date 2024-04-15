@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+
+    
+  <h1>Checkout</h1>
+
+  <form id="checkout">
+  
+    <div id="customer" class="block">
+  
+      <h3>Customer Details</h3>
+      <hr>
+  
+      <div class="column">
+      <div class="row padded">
+        <label>First Name</label>
+        <input type="text" name="customer[firstname]" value="" placeholder="First Name">
+      </div>
+      
+      <div class="row">
+        <label>Last Name</label>
+        <input type="text" name="customer[lastname]" value="" placeholder="Last Name">
+      </div>
+  </div>
+
+  <div class="column"> 
+      <div class="row">
+        <label>Email</label>
+        <input type="text" name="customer[email]" value="" placeholder="Email">
+      </div>
+
+      <div class="row">
+        <label>Phone no</label>
+        <input type="text" name="customer[email]" value="" placeholder="+91 00000 00000">
+      </div>
+    </div>
+    
+  
+    </div>
+  
+    <div id="shipping" class="block">
+  
+      <h3>Shipping Details</h3>
+      <hr>
+  
+      <div class="row">
+        <label>Country</label>
+        <select name="shipping[country]" onchange="localeListShippingCountries($(this).val())"></select>
+      </div>
+  
+      <div class="row">
+        <label>Name</label>
+        <input type="text" name="Name" value="">
+      </div>
+  
+      <div class="row">
+        <label>Street Address</label>
+        <input type="text" name="shipping[street]" value="">
+      </div>
+      
+      <div class="column">
+        <div class="row padded">
+          <label>City</label>
+          <input type="text" name="shipping[town_city]" >
+        </div>
+  
+        <div class="row">
+          <label>Province/Region/State</label>
+          <select name=""></select>
+        </div>
+      </div>
+       
+      <div class="column">
+      <div class="row padded">
+        <label>Postal/Zip Code</label>
+        <input type="text" name="" v>
+      </div>
+      
+      <div class="row">
+        <label>Shipping method</label>
+      <select name="fulfillment[shipping_method]">
+        
+      </select>
+    </div>
+     </div>
+  
+    </div>
+    
+    <div id="payment" class="block">
+  
+      <h3>Payment</h3>
+      <hr>
+  
+      <div class="row">
+        <label>Card Number</label>
+        <input type="text" name="payment[card][number]" value="" placeholder="**** **** **** ****">
+      </div>
+      
+      <div class="column">
+            <div class="row padded">
+        <label>Expiry Month</label>
+        <input type="text" name="payment[card][expiry_month]" value="" placeholder="Expiry Month">
+      </div>
+  
+      <div class="row">
+        <label>Expiry Year</label>
+        <input type="text" name="payment[card][expiry_year]" value="" placeholder="Expiry Year">
+      </div>
+      </div>
+  
+  <div class="column">
+      <div class="row padded">
+        <label>Security Code (CCV)</label>
+        <input type="text" name="payment[card][cvc]" value="" placeholder="Security Code (CCV)">
+      </div>
+  
+      <div class="row">
+        <label>Billing Postal/Zip Code</label>
+        <input type="text" name="payment[card][postal_zip_code]" value="" placeholder="Billing Postal/Zip Code">
+      </div>
+      </div>
+  
+    </div>
+  
+    <button type="button" onclick="capture();">Pay Now</button>
+  
+  </form>
+
+  <div>
+  <a href="#">PT CODING</a>
+</div>
+    
+</body>
+        <script src="../payment/main.js"></script>
+</html>
